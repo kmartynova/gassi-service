@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vier Pfoten Gassi-Service</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-pattern">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky-top">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <span class="text-primary logo-text">Vier Pfoten</span>
+          <span class="logo-subtitle">Gassi-Service</span>
+        </div>
+        
+        <nav class="desktop-nav">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#prices" class="nav-link">Preise</a>
+          <a href="#testimonials" class="nav-link">Bewertungen</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="nav-link">Kontakt</a>
+        </nav>
+        
+        <button class="mobile-menu-button" id="mobile-menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#prices" class="mobile-nav-link">Preise</a>
+        <a href="#testimonials" class="mobile-nav-link">Bewertungen</a>
+        <a href="#faq" class="mobile-nav-link">FAQ</a>
+        <a href="#contact" class="mobile-nav-link">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <div class="flex-layout">
+      <!-- Contact Form Section -->
+      <div class="contact-form-container">
+        <div class="card" id="contact">
+          <h2 class="section-title">Kontaktieren Sie uns</h2>
+          <p class="text-gray">
+            Füllen Sie das Formular aus, um Ihren Hund für unseren Gassi-Service anzumelden.
+          </p>
+          
+          <form id="contact-form" class="form">
+            <div class="form-group">
+              <label for="name">Name*</label>
+              <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+              <span class="error-message" id="name-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">E-Mail*</label>
+              <input type="email" id="email" name="email" placeholder="ihre.email@beispiel.de" required>
+              <span class="error-message" id="email-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="text" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+              <span class="error-message" id="phone-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="dogName">Name des Hundes*</label>
+              <input type="text" id="dogName" name="dogName" placeholder="Name Ihres Hundes" required>
+              <span class="error-message" id="dogName-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="dogBreed">Hunderasse</label>
+              <input type="text" id="dogBreed" name="dogBreed" placeholder="Rasse Ihres Hundes">
+              <span class="error-message" id="dogBreed-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Gewünschter Service*</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Bitte wählen Sie</option>
+                <option value="30min">30-minütiger Spaziergang</option>
+                <option value="60min">60-minütiger Spaziergang</option>
+                <option value="puppy">Welpen-Spaziergang</option>
+                <option value="evening">Abendlicher Spaziergang</option>
+                <option value="custom">Individueller Spaziergang</option>
+                <option value="group">Gruppenspaziergang</option>
+                <option value="weekend">Wochenend Spaziergang</option>
+                <option value="senior">Senioren-Spaziergang</option>
+                <option value="twice">Zweimal täglicher Spaziergang</option>
+                <option value="transport">Transport zum Tierarzt/Hundefriseur</option>
+                <option value="daycare">Hundetagesbetreuung</option>
+                <option value="monthly">Monatskarte</option>
+              </select>
+              <span class="error-message" id="service-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" placeholder="Ihre Nachricht an uns" rows="4"></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Anfrage senden</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Content Section -->
+      <div class="content-container">
+        <div class="card">
+          <h1 class="title">GASSI-SERVICE</h1>
+          <p class="subtitle">
+            Vertrauen Sie Ihrem vierbeinigen Freund unserem Service "Vier Pfoten" an! 🐾💖
+          </p>
+
+          <!-- Blobs with images -->
+          <div class="blob-container">
+            <div class="blob-wrapper">
+              <div class="blob primary">
+                <img 
+                  src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" 
+                  alt="Hundebetreuung"
+                />
+              </div>
+              <div class="icon-badge heart-badge">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="blob-wrapper">
+              <div class="blob-alt secondary">
+                <img 
+                  src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=800&q=80" 
+                  alt="Glücklicher Hund"
+                />
+              </div>
+              <div class="icon-badge paw-badge">
+                <i class="fas fa-paw"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-text">
+            <p>
+              Wir bieten professionellen Gassi-Service für Ihren Hund an! Unser erfahrenes Team kümmert sich liebevoll um Ihren vierbeinigen Freund, während Sie bei der Arbeit sind oder andere Verpflichtungen haben.
+            </p>
+            <p>
+              Unsere Spaziergänge finden in den schönsten Grünanlagen Berlins statt, damit Ihr Hund genügend Auslauf und Abwechslung bekommt.
+            </p>
+          </div>
+        </div>
+
+        <!-- Services Description -->
+        <div class="card" id="services">
+          <h2 class="section-title">Unsere Services</h2>
+          
+          <div class="services-grid">
+            <!-- Individual Service -->
+            <div class="service-item">
+              <div class="service-icon primary">
+                <i class="fas fa-walking"></i>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Individuelle Spaziergänge</h3>
+                <p class="service-description">Maßgeschneiderte Spaziergänge, die auf die Bedürfnisse und das Temperament Ihres Hundes abgestimmt sind.</p>
+              </div>
+            </div>
+
+            <!-- Group Service -->
+            <div class="service-item">
+              <div class="service-icon secondary">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Gruppenspaziergänge</h3>
+                <p class="service-description">Soziale Interaktion mit anderen Hunden in kleinen, überwachten Gruppen.</p>
+              </div>
+            </div>
+
+            <!-- Puppy Service -->
+            <div class="service-item">
+              <div class="service-icon accent">
+                <i class="fas fa-baby"></i>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Welpen-Betreuung</h3>
+                <p class="service-description">Spezielle Betreuung für Welpen mit kurzen, altersgerechten Spaziergängen.</p>
+              </div>
+            </div>
+
+            <!-- Home Service -->
+            <div class="service-item">
+              <div class="service-icon button">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Hundebetreuung</h3>
+                <p class="service-description">Liebevolle Betreuung Ihres Hundes bei Ihnen zu Hause, wenn Sie nicht da sind.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing List -->
+        <div class="card" id="prices">
+          <h2 class="section-title">Unsere Preise</h2>
+          
+          <div class="price-grid">
+            <!-- Price Item 1 -->
+            <div class="price-card">
+              <h3 class="price-title">30-minütiger Spaziergang</h3>
+              <div class="price-amount">15€</div>
+              <p class="price-description">Ideal für Hunde, die regelmäßige kurze Spaziergänge benötigen.</p>
+            </div>
+
+            <!-- Price Item 2 -->
+            <div class="price-card">
+              <h3 class="price-title">60-minütiger Spaziergang</h3>
+              <div class="price-amount">25€</div>
+              <p class="price-description">Perfekt für aktive Hunde, die mehr Bewegung brauchen.</p>
+            </div>
+            
+            <!-- Price Item 3 -->
+            <div class="price-card">
+              <h3 class="price-title">Gassi-Service für Welpen</h3>
+              <div class="price-amount">18€ <span class="price-duration">(30 Minuten)</span></div>
+              <p class="price-description">Sanfte, altersgerechte Spaziergänge für junge Hunde.</p>
+            </div>
+            
+            <!-- Price Item 4 -->
+            <div class="price-card">
+              <h3 class="price-title">Abendlicher Spaziergang</h3>
+              <div class="price-amount">28€ <span class="price-duration">(60 Minuten)</span></div>
+              <p class="price-description">Entspannter Abendspaziergang nach einem langen Tag.</p>
+            </div>
+            
+            <!-- Price Item 5 -->
+            <div class="price-card">
+              <h3 class="price-title">Individueller Spaziergang</h3>
+              <div class="price-amount">35€ <span class="price-duration">(pro Stunde)</span></div>
+              <p class="price-description">Maßgeschneiderte Spaziergänge nach Ihren Wünschen.</p>
+            </div>
+            
+            <!-- Price Item 6 -->
+            <div class="price-card">
+              <h3 class="price-title">Gruppenspaziergang</h3>
+              <div class="price-amount">20€ <span class="price-duration">(pro Hund)</span></div>
+              <p class="price-description">Max. 3 Hunde, 60 Minuten, für sozial verträgliche Hunde.</p>
+            </div>
+            
+            <!-- Price Item 7 -->
+            <div class="price-card">
+              <h3 class="price-title">Wochenend Spaziergang</h3>
+              <div class="price-amount">30€ <span class="price-duration">(60 Minuten)</span></div>
+              <p class="price-description">Service am Wochenende für beschäftigte Hundebesitzer.</p>
+            </div>
+            
+            <!-- Price Item 8 -->
+            <div class="price-card">
+              <h3 class="price-title">Senioren-Hundespaziergang</h3>
+              <div class="price-amount">20€ <span class="price-duration">(30 Minuten)</span></div>
+              <p class="price-description">Langsames Tempo, speziell für ältere Hunde.</p>
+            </div>
+            
+            <!-- Price Item 9 -->
+            <div class="price-card highlight">
+              <h3 class="price-title">Zweimal täglicher Spaziergang</h3>
+              <div class="price-amount">28€ <span class="price-duration">(je 30 Minuten)</span></div>
+              <p class="price-description">Morgen- und Nachmittagsspaziergang für regelmäßige Routine.</p>
+            </div>
+            
+            <!-- Price Item 10 -->
+            <div class="price-card">
+              <h3 class="price-title">Transport zu/von Tierarzt</h3>
+              <div class="price-amount">40€</div>
+              <p class="price-description">Transport zum Tierarzt oder Hundefriseur.</p>
+            </div>
+            
+            <!-- Price Item 11 -->
+            <div class="price-card">
+              <h3 class="price-title">Hundetagesbetreuung</h3>
+              <div class="price-amount">50€</div>
+              <p class="price-description">Betreuung zuhause bei Kunden, inkl. Spaziergänge.</p>
+            </div>
+            
+            <!-- Price Item 12 -->
+            <div class="price-card highlight">
+              <h3 class="price-title">Monatskarte</h3>
+              <div class="price-amount">400€</div>
+              <p class="price-description">Tägliche Spaziergänge (30 Minuten) für einen Monat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title centered">Was unsere Kunden sagen</h2>
+      
+      <div class="testimonials-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card primary">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "Vier Pfoten ist einfach unschlagbar! Mein Labrador liebt die täglichen Spaziergänge und ist jedes Mal so glücklich, wenn der Gassi-Geher kommt."
+          </blockquote>
+          <cite class="testimonial-author">Markus S.</cite>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card secondary">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "Seit wir den Senioren-Service nutzen, geht es unserem alten Dackelmix viel besser. Die Gassigeher haben so viel Geduld und Verständnis."
+          </blockquote>
+          <cite class="testimonial-author">Julia K.</cite>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card accent">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "Die Monatskarte ist perfekt für uns, da wir beruflich viel unterwegs sind. Unser Hund bekommt täglich seine Bewegung und wir haben ein gutes Gewissen."
+          </blockquote>
+          <cite class="testimonial-author">Thomas W.</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title centered">Häufig gestellte Fragen</h2>
+      
+      <div class="faq-container">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Wie buche ich einen Gassi-Service?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Füllen Sie einfach das Kontaktformular aus oder rufen Sie uns direkt an. Wir vereinbaren dann einen Termin für ein Kennenlerngespräch mit Ihrem Hund.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Sind die Gassigeher qualifiziert?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ja, alle unsere Mitarbeiter sind erfahrene Hundeliebhaber mit Qualifikationen in Hundeverhalten und Erster Hilfe für Tiere.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Was passiert bei schlechtem Wetter?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Wir gehen bei fast jedem Wetter spazieren. Bei extremen Wetterbedingungen passen wir die Dauer an oder bieten alternative Betreuung an.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Kann ich regelmäßige Termine buchen?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Natürlich! Wir bieten flexible Terminpläne an, sei es täglich, wöchentlich oder nach Bedarf. Die Monatskarte ist ideal für regelmäßige Spaziergänge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="text-primary logo-text">Vier Pfoten</span>
+          <span class="footer-tagline">Gassi-Service</span>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="footer-heading">Schnelle Links</h3>
+          <ul class="footer-nav">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#prices">Preise</a></li>
+            <li><a href="#testimonials">Bewertungen</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3 class="footer-heading">Kontakt</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Musterstraße 123, 10115 Berlin</p>
+          <p><i class="fas fa-phone"></i> +49 30 12345678</p>
+          <p><i class="fas fa-envelope"></i> info@vierpfoten-service.de</p>
+        </div>
+        
+        <div class="footer-social">
+          <h3 class="footer-heading">Folgen Sie uns</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vier Pfoten Gassi-Service. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
